@@ -53,4 +53,35 @@ public class CalculationService {
         }
         System.out.println(result);
     }
+
+
+    public void square() {
+        List<Double> list = service.giveTheList();
+        if (list.size() > 1 ) {
+            System.out.println("Please enter 1 number for Square Function");
+        }
+        else {
+            System.out.println(Math.pow(list.get(0), 2));
+        }
+    }
+
+    public void squareRoot(){
+        List<Double> list = service.giveTheList();
+        if (list.size() > 1 ) {
+            System.out.println("Please enter 1 number for Square Root Function");
+        }
+        else {
+            System.out.println(Math.sqrt(list.get(0)));
+        }
+    }
+
+    public void reverseSign() {
+        List<Double> list = service.giveTheList();
+        if (list.size() > 1 ) {
+            System.out.println("Please enter 1 number for Square Root Function");
+        }
+        else {
+            System.out.println(list.get(0) * -1);
+        }
+    }
 }

@@ -6,9 +6,9 @@ import java.io.PrintStream;
 
 @Service
 public class ConsoleService {
-    public static final String ANSI_YELLOW = "\u001B[33m";
+    private static final String ANSI_YELLOW = "\u001B[33m";
     private final static String ANSI_RESET = "\u001B[0m";
-    public static final String RED = "\033[0;31m";
+    private static final String RED = "\033[0;31m";
 
 
     private final PrintStream out = System.out;
